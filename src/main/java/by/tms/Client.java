@@ -35,7 +35,7 @@ public class Client {
         scanner.close();
 
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(new URI("http://localhost:8080/calc?firstNum=%s&secondNum=%s&operator=%s"
+                .uri(new URI("http://localhost:8080/calc?firstNum=%s&secondNum=%s&operation=%s"
                         .formatted(firstNum, secondNum, operator)))
                 .GET().build();
 
